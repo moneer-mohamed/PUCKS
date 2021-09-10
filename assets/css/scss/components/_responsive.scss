@@ -1,0 +1,105 @@
+/*--------------------------------------------------------------
+# Start Responsive
+--------------------------------------------------------------*/
+
+@media(max-width:1199.98px) {
+    .nav_bar .logo img {
+        width: 75px;
+    }
+    .nav_bar ul li:not(:last-of-type) {
+        margin-inline-end: 30px;
+    }
+    .header_section .info h2 {
+        padding-inline-end: 0;
+    }
+    .nav_bar .list .dropDown_btn .dropdown_menu {
+        min-width: 42em;
+        padding: 50px 50px;
+    }
+    .nav_bar .list .dropDown_btn .dropdown_menu:before {
+        top: -27px;
+    }
+}
+
+@media(max-width:991.98px) {
+    .header_section .info h2 {
+        font-size: 100px;
+    }
+    .header_section {
+        >.container {
+            justify-content: center;
+        }
+        .info {
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        .box_slider {
+            height: 280px;
+            .image img {
+                width: 230px;
+            }
+        }
+    }
+    .nav_bar .list .dropDown_btn .dropdown_menu {
+        min-width: 39em;
+        padding: 50px 25px;
+    }
+    .about_section .main_box .image,
+    .about_section .main_box .info {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .about_section .main_box .image img {
+        height: 300px;
+    }
+    .contact_section .content {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media(max-width:767.98px) {
+    .categories_section .main_box .box {
+        height: 200px;
+        .name {
+            font-size: 26px;
+        }
+        img {
+            height: 81px;
+        }
+    }
+    .about_section .main_box .info {
+        padding: 70px 30px;
+    }
+    .footer .box {
+        margin-bottom: 60px;
+    }
+}
+
+@media(max-width:575.98px) {
+    .footer {
+        padding: 60px 0 20px;
+        text-align: center;
+        .box .sochial .item {
+            justify-content: center;
+        }
+    }
+    .copyright {
+        .o-2 {
+            order: 2;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .links {
+            justify-content: space-between;
+            a {
+                margin: 0 !important;
+            }
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+# End Responsive
+--------------------------------------------------------------*/

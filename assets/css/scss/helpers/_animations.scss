@@ -1,0 +1,21 @@
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        right: -130%;
+    }
+    100% {
+        opacity: 1;
+        right: 0%;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        left: -130%;
+    }
+    100% {
+        opacity: 1;
+        left: 0%;
+    }
+}

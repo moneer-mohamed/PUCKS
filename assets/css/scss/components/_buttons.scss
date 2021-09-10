@@ -1,0 +1,21 @@
+/*********** Start buttons ************/
+
+.main-btn {
+    padding: 8px 30px;
+    color: #fff;
+    transition: .3s;
+    display: inline-block;
+    font-size: 15px;
+    &.main {
+        border: 0;
+        background-color: $mainColor;
+        border-radius: 5px;
+        &:hover {
+            background: $secColor;
+            color: #fff;
+        }
+    }
+}
+
+
+/*********** End buttons ************/
