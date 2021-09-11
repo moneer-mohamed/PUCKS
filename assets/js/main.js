@@ -10,6 +10,27 @@ $(document).ready(function() {
 
     });
 
+    /* ===============================  handlePreloader  =============================== */
+
+    function handlePreloader() {
+        if ($('.loader-wrap_main').length) {
+            $('.loader-wrap_main').delay(1500).fadeOut(500);
+        }
+        TweenMax.to($(".loader-wrap_main .overlay_pre"), 1.2, {
+            force3D: true,
+            left: "100%",
+            ease: Expo.easeInOut,
+        });
+    }
+
+    if ($(".preloader-close").length) {
+        $(".preloader-close").on("click", function() {
+            $('.loader-wrap_main').delay(200).fadeOut(500);
+        })
+    }
+
+    handlePreloader();
+
     /* ===============================  click on navbar toggler  =============================== */
 
     $('#nav-icon1').on('click', function() {

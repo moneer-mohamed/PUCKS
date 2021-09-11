@@ -1261,16 +1261,92 @@ input::placeholder {
   bottom: 30px;
 }
 
-/*End button up*/
-.overlay {
-  position: absolute;
+/*--------------------------------------------------------------
+# Start loader
+--------------------------------------------------------------*/
+.loader-wrap_main {
+  position: fixed;
+  left: 0px;
+  top: 0px;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
+  z-index: 999999;
 }
 
-/*End plugins*/
+.loader-wrap_main .preloader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(../img/preloader.svg);
+}
+
+.loader-wrap_main .preloader-close {
+  position: fixed;
+  z-index: 999999;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  right: 0;
+  bottom: 0;
+  font-weight: 600;
+  background-color: #A89255;
+}
+
+.loader-wrap_main .layer {
+  position: absolute;
+  width: 33.3333%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+}
+
+.loader-wrap_main .layer .overlay_pre {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #EF4B4D;
+}
+
+.loader-wrap_main .layer-one {
+  left: 0%;
+}
+
+.loader-wrap_main .layer-two {
+  left: 33.3333%;
+}
+
+.loader-wrap_main .layer-three {
+  left: 66.6666%;
+}
+
+.loader-wrap {
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.55s;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 9;
+  background: #EF4B4D;
+}
+
+.loader-wrap.open {
+  transform: scaleX(1);
+}
+
+/*--------------------------------------------------------------
+# End loader
+--------------------------------------------------------------*/
 @keyframes slideInLeft {
   0% {
     opacity: 0;
